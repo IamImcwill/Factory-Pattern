@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-     class Car
+     class Car: IVehicle
     {
         public string Color { get; set; }
         public bool IsDriveable { get; set; }
         public void Drive() 
         {
-            Console.WriteLine("Can't text I'm driving!!!");
+            Console.WriteLine("Sorry I can't text I'm driving my {Color} car!!!");
         }
     }
 }

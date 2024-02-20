@@ -8,7 +8,9 @@
             string userInput = Console.ReadLine();
 
             VehicleFactory factory = new VehicleFactory();
-           Car myCar = factory.CreateVehicle(userInput);
+           IVehicle myVehicle = factory.CreateVehicle(userInput);
+
+            myVehicle.Drive();
 
             Console.WriteLine("Lets make another vehicle");
             userInput = Console.ReadLine();
@@ -17,4 +19,4 @@
             }
         }
     }
-}
+

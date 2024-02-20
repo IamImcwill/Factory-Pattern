@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-     class Motorcycle
+     class Motorcycle : IVehicle
     {
         public string Name { get; set; }
 

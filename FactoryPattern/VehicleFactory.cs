@@ -8,16 +8,16 @@ namespace FactoryPattern
 {
     class VehicleFactory
     {
-        public Car CreateVehicle(string userInput) 
+        public IVehicle CreateVehicle(string userInput) 
         {
             switch (userInput.ToLower())
             {
                 case "car":
-                    return new Car();
+                    return new Car() { Color = "Blue", IsDriveable = true};
                 case "motorcycle":
                     return new Motorcycle();
                 default:
-                    break;
+                    return new Car();
             }
         }
     }
