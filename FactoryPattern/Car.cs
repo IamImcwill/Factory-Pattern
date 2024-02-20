@@ -12,7 +12,7 @@ namespace FactoryPattern
         public bool IsDriveable { get; set; }
         public void Drive() 
         {
-            Console.WriteLine("Sorry I can't text I'm driving my {Color} car!!!");
+            Console.WriteLine("Sorry I can't text I'm driving!!!");
         }
     }
 }
